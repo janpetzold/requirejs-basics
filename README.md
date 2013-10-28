@@ -7,4 +7,4 @@ The project consists of three sites: the main site (index) that has no dependenc
 
 I configured a build at tools/build.js that will automatically optimize all JS files and create a single .js script for any page, no matter how many libraries/modules where used there.
 
-For details, see the blog post at XXX.
+For details, see the blog post at http://getstreaming.wordpress.com/2013/10/28/managing-dependencies-and-responsibilities-with-require-js/.
