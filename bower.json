@@ -1,0 +1,11 @@
+{
+  "name": "requirejs-basics",
+  "version": "0.0.0",
+  "dependencies": {
+    "requirejs": "~2.1.8",
+    "jquery": "~1.10.2",
+    "d3": "~3.3.8",
+    "videojs": "~4.2.2"
+  },
+  "devDependencies": {}
+}
