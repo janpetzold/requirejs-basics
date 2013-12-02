@@ -8,6 +8,8 @@
     <title>Time</title>
 
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/alertify.core.css">
+    <link rel="stylesheet" href="styles/alertify.default.css">
 </head>
 <body>
     <span>Menu:</span>
@@ -17,8 +19,12 @@
     <span> | </span>
     <a href="video.html">Video</a>
 
-    <h1>The current time is:</h1>
+    <h1>Time data</h1>
     <p id="timestamp"></p>
+
+    <p>To get to know the French date in a week, press the button:</p>
+
+    <button type="button" value="day">Clique moi</button>
 
     <!-- The data-main attribute determines the JS that shall be initially executed -->
     <script data-main="scripts/time" src="scripts/lib/require/require.js"></script>

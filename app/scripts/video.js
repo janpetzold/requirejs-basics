@@ -1,10 +1,5 @@
 // This is no module, therefore we have to define the imports explicitly (?)
-require({
-    paths: {
-        'videojs': 'lib/videojs/video',
-        'videoMetaBasic': 'modules/videoMetaBasic'
-    }
-}, ['common', 'videojs', 'videoMetaBasic'], function(common, videojs, videoMetaBasic){
+require(['common', 'lib/videojs/video', 'modules/videoMetaBasic'], function(common, videojs, videoMetaBasic){
     console.log("Video-Script active");
 
     // Test (imported) jQuery

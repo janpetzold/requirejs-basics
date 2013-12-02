@@ -6,6 +6,10 @@ define(['moment'], function(moment) {
     return {
         getToday : function() {
             return moment().format('dddd');
+        },
+        getFrenchDayOneWeekAhead: function() {
+            moment.lang('fr');
+            return moment().format('LLLL');
         }
     }
 });

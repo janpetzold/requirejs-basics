@@ -1,10 +1,5 @@
 // This is no module, therefore we have to define the imports explicitly (?)
-require({
-    paths: {
-        'd3': 'lib/d3/d3',
-        'client': 'modules/clientEnv'
-    }
-}, ['common', 'd3', 'client'], function(common, d3, client){
+require(['common', 'lib/d3/d3', 'modules/clientEnv'], function(common, d3, client){
     console.log("Stats-Script active");
 
     // Make use of the clientConfiguration module

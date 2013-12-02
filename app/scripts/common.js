@@ -15,7 +15,7 @@ requirejs.config({
             'http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min',
             'lib/underscore/underscore'
         ],
-        'moment': 'moment/moment'
+        'moment': 'moment/moment-with-langs'
     }
 });
 
