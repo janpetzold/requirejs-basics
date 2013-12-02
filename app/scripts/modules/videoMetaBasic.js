@@ -2,8 +2,7 @@
  * This just defines a very simple mode that contains two methods.
  * This model will be extended (Mixin) further on.
  */
-define(['common'], function(common) {
-        var $ = common.getJquery();
+define([], function() {
         return {
             getModel : function() {
                 // Return a basic model for video metadata that just has some methods

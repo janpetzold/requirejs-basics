@@ -6,7 +6,8 @@
     "jquery": "~1.10.2",
     "d3": "~3.3.8",
     "videojs": "~4.2.2",
-    "underscore": "~1.5.2"
+    "underscore": "~1.5.2",
+    "moment": "~2.4.0"
   },
   "devDependencies": {}
 }

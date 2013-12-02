@@ -1,20 +1,24 @@
-define(['common', 'lib/d3/d3', 'modules/clientEnv'], function(common, d3, client) {
-        console.log("Stats-Script active");
-
-        // Make use of the clientConfiguration module
-        if(client.getLoadTime() != null) {
-            console.log("Time of page load was " + client.getLoadTime() + " ms");
-            console.log("User agent is " + client.getUserAgent().browserName + " on " + client.getUserAgent().os);
-        }
-
-        // Make use of jQuery
-        var $ = common.getJquery();
-        console.log("Current headline is " + $("h1").text());
-
-        // Draw the chart
-        chart.drawChart();
+// This is no module, therefore we have to define the imports explicitly (?)
+require({
+    paths: {
+        'd3': 'lib/d3/d3',
+        'client': 'modules/clientEnv'
     }
-);
+}, ['common', 'd3', 'client'], function(common, d3, client){
+    console.log("Stats-Script active");
+
+    // Make use of the clientConfiguration module
+    if(client.getLoadTime() != null) {
+        console.log("Time of page load was " + client.getLoadTime() + " ms");
+        console.log("User agent is " + client.getUserAgent().browserName + " on " + client.getUserAgent().os);
+    }
+
+    // Make use of jQuery
+    console.log("Current headline is " + $("h1").text());
+
+    // Draw the chart
+    chart.drawChart();
+});
 
 var chart = {};
 

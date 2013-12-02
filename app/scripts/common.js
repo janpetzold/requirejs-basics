@@ -4,17 +4,18 @@
 
 // main configuration
 requirejs.config({
-    baseUrl: 'scripts',
+    baseUrl: 'scripts/lib',
     paths: {
         // Local fallback but the default is the Google CDN
-        jquery: [
+        'jquery': [
             'http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min',
             'lib/jquery/jquery'
         ],
-        underscore: [
+        'underscore': [
             'http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min',
-            'lib/jquery/jquery'
-        ]
+            'lib/underscore/underscore'
+        ],
+        'moment': 'moment/moment'
     }
 });
 
@@ -22,6 +23,7 @@ requirejs.config({
 define(['jquery', 'underscore'], function () {
     var $ = require('jquery');
     var _ = require('underscore');
+
     return {
         getJquery: function() {
             return $;
